@@ -1,4 +1,4 @@
-import Developer from "/svg/developer.svg?react";
+import Developer from "/svg/developer.svg";
 
 import "./Home.css";
 import HomeButton from "../../components/homeButton/HomeButton";
