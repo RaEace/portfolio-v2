@@ -1,0 +1,22 @@
+.img-render {
+  border: 3px solid #ddd;
+  filter: grayscale(100%);
+   max-width: 15rem;
+  height: auto;
+}
+
+.img-rounded {
+  border-radius: 50% 50% 48% 52% / 37% 36% 64% 63% ;
+}
+
+.img-container {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .img-render {
+    height: 25rem;
+    width: 25rem;
+  }
+}

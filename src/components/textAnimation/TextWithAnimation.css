@@ -1,0 +1,96 @@
+.card {
+  position: relative;
+  background: transparent;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+}
+
+.card body {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ffffff);
+  animation: animate_one 10s linear infinite;
+}
+
+@keyframes animate_one {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.card span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+  animation: animate_two 10s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes animate_two {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.card span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, transparent, #ffffff);
+  animation: animate_three 10s linear infinite;
+}
+
+@keyframes animate_three {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #ffffff);
+  animation: animate_four 10s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes animate_four {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

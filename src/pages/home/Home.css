@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-top: 5%;
+}
+
+.text-container {
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+}
+
+.animation-container {
+    flex: 1;
+    justify-content: center;
+    align-self: center;
+}
+
+.animation-size {
+    width: 75%;
+    margin-left: 7rem;
+}
+
+.text-zone {
+    text-align: center;
+    overflow: hidden;
+}
+
+.home-title {
+    color: white;
+    font-size: 90px;
+}
+
+.home-text {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+}
+
