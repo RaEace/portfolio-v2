@@ -1,5 +1,4 @@
 import Developer from "/svg/developer.svg?react";
-import HomePicture from "../../components/homePicture/HomePicture";
 
 import "./Home.css";
 import HomeButton from "../../components/homeButton/HomeButton";
@@ -17,7 +16,7 @@ const Home = () => {
             on various projects that have allowed me to develop my skills in
             both frontend and backend development.
           </p>
-          <div>
+          <div className="btn-spacing">
             <HomeButton text="About me" />
             <HomeButton text="contact me" />
           </div>
