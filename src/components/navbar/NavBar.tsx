@@ -12,33 +12,24 @@ const NavBar: React.FC = () => {
 
   return (
     <nav id="menu">
-      {/* <input
-        className={`${!isMenuOpen ? "not-" : ""}checked-menu`}
+      <input
         type="checkbox"
         id="responsive-menu"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-      /> */}
-      {/* <label></label> */}
+      />
+      <label></label>
       <ul>
         <li>
-          <a onClick={() => handleRedirect("/")}>
-            <b>Jules Lagny</b>
-          </a>
+          <a onClick={() => handleRedirect("/")}>Jules Lagny</a>
         </li>
         <li>
-          <a onClick={() => handleRedirect("/about-me")}>
-            <b>About me</b>
-          </a>
+          <a onClick={() => handleRedirect("/about-me")}>About me</a>
         </li>
         <li>
-          <a onClick={() => handleRedirect("/career")}>
-            <b>My Career</b>
-          </a>
+          <a onClick={() => handleRedirect("/my-career")}>My Career</a>
         </li>
         <li>
-          <a onClick={() => handleRedirect("/contact-me")}>
-            <b>contact me!</b>
-          </a>
+          <a onClick={() => handleRedirect("/contact-me")}>Contact me</a>
         </li>
       </ul>
     </nav>

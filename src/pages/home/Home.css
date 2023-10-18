@@ -2,8 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  top: 0;
 }
 
+.layout {
+  margin-top: 5rem;
+}
 .container > div {
   width: 50%;
   display: flex;
