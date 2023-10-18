@@ -8,6 +8,7 @@
 .layout {
   margin-top: 5rem;
 }
+
 .container > div {
   width: 50%;
   display: flex;
@@ -73,5 +74,9 @@
   .btn-spacing {
     display: flex;
     flex-direction: column;
+  }
+
+  .layout {
+    margin-top: 0;
   }
 }
