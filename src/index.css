@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary: #f25c54;
   --secondary: #f27059;
@@ -10,6 +14,11 @@
   --line-height: 1.5;
   --letter-spacing: 0.5px;
 
-  background: rgb(244,132,95);
-  background: linear-gradient(90deg, rgba(244,132,95,1) 0%, rgba(247,157,101,1) 40%, rgba(247,178,103,1) 100%);
+  background: rgb(244, 132, 95);
+  background: linear-gradient(
+    90deg,
+    rgba(244, 132, 95, 1) 0%,
+    rgba(247, 157, 101, 1) 40%,
+    rgba(247, 178, 103, 1) 100%
+  );
 }

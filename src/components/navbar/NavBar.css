@@ -1,84 +1,43 @@
-#menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-right: 30px;
-    gap: 10px;
-}
-#menu li {
-	float: left;
-	display: inline;
-	position: relative;
-    cursor: pointer
+ul {
+  padding: 0;
+  list-style: none;
+  display: table;
+  text-align: center;
 }
 
-#menu a {
-	display: block;
-	line-height: 65px;
-	padding: 0 14px;
-	text-decoration: none;
-	color: #F7F7F7;
-	font-size: 20px;
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
 }
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
 
-#menu a.dropdown-arrow:after {
-	content: "\25BE";
-	margin-left: 5px;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
 }
-
-#menu li a:hover {
-	color: #F25C54;
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
-
-#menu input {
-	display: none;
-	margin: 0;
-	padding: 0;
-	height: 65px;
-	width: 100%;
-	opacity: 0;
-	cursor: pointer
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
-
-#menu label {
-	display: none;
-	line-height: 65px;
-	text-align: center;
-	position: absolute;
-	left: 35px
-}
-
-#menu label:before {
-	font-size: 1.6em;
-	content: "\2261"; 
-	margin-left: 20px;
-}
-
-#menu ul.sub-menus{
-	height: auto;
-	overflow: hidden;
-	width: 170px;
-	background: #F25C54;
-	position: absolute;
-	z-index: 99;
-	display: none;
-}
-
-#menu ul.sub-menus li {
-	display: block;
-	width: 100%;
-}
-
-#menu ul.sub-menus a {
-	color: #FFFFFF;
-	font-size: 16px;
-}
-
-#menu li:hover ul.sub-menus {
-	display: block
-}
-
-#menu ul.sub-menus a:hover{
-	background: #F2F2F2;
-	color: #F7B267;
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
 }

@@ -9,7 +9,7 @@ const Home = () => {
       <div className="container">
         <div className="text-container">
           {/* <HomePicture /> */}
-          <h1 className="home-title">Hey, i'm Jules</h1>
+          <div className="home-title">Hey, i'm Jules</div>
           <p className="home-text">
             A fullstack developer with 3 years of experience. <br />
             I am passionate about JavaScript technologies. <br /> I have worked

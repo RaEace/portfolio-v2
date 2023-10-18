@@ -12,13 +12,13 @@ const NavBar: React.FC = () => {
 
   return (
     <nav id="menu">
-      <input
+      {/* <input
         className={`${!isMenuOpen ? "not-" : ""}checked-menu`}
         type="checkbox"
         id="responsive-menu"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-      />
-      <label></label>
+      /> */}
+      {/* <label></label> */}
       <ul>
         <li>
           <a onClick={() => handleRedirect("/")}>
